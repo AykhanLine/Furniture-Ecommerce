@@ -1,0 +1,48 @@
+#section-about-1{
+    .about-peak-head{
+        padding: 20px;
+        h1{
+         font-size: 25px;   
+        }
+    }
+
+
+    .about-peak-mid{
+        text-align: center;
+        padding: 50px 20% 0px 20%;
+        .img-box{
+            width: 100%;
+            img{
+                width: 50%;
+                margin-bottom: 50px;
+            }
+        }
+
+        p{
+            margin-bottom: 50px;
+        }
+        strong{
+            margin-bottom: 50px;
+            display: inline-block;
+        }
+    }
+
+    .about-peak-foot{
+        padding: 50px 0px;
+        .box{
+            text-align: center;
+            padding: 30px 100px 30px 100px;
+            p{
+                font-size: 14px;
+                a{
+                    text-decoration: none;
+                    color: rgb(99, 99, 99);
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        color: #BA412A;
+                    }
+                }
+            }
+        }
+    }
+}

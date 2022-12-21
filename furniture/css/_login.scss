@@ -1,0 +1,189 @@
+#log-reg{
+    height: 100vh;
+    // background-color: gray;
+
+
+    .opt-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+ 
+                .login-box{
+                   width: 500px;
+                   position: absolute;
+                //    border: 2px solid red;
+                  height: 200px;
+                //   background-color: blue;
+                  left: 0%;
+                  top: 0%;
+                  transform: translateX(0%);
+                  transition: 0.3s ease-in-out;
+                  &.logbox-active{
+                    transform: translateX(-100%);
+                  }
+
+                  input{
+                    border: 1px solid gray;
+                  }
+                  span{
+                    font-size: 14px;
+                    font-weight: bold;
+                  }
+
+                  .checkbox{
+                    padding-right: 5px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+
+                    a{
+                        text-decoration: none;
+                        color: #3E516A;
+                        transition: 0.3s ease-in-out;
+                        font-size: 13px;
+                        &:hover{
+                            color: #BA412A;
+                        }
+                    }
+                  }
+
+                  button{
+                    background-color: black;
+                    border: none;
+                    color: #FFF;
+                    font-size: 14px;
+                    font-weight: bold;
+                    // font-family: cursive;
+                    width: 70px;
+                    height: 45px;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        background-color: #BA412A;
+                    }
+                  }
+                }
+               
+                 .reg-box{
+                      width: 500px;
+                      left: 0%;
+                      transform: translateX(100%);
+                      top: 0;
+                      position: absolute;
+                      height: 500px;
+                      transition: 0.3s ease-in-out;
+
+                           &.regbox-active{
+                            transform: translateX(0);
+                           }
+
+                           input{
+                            border: 1px solid gray;
+                          }
+                          span{
+                            font-size: 14px;
+                            font-weight: bold;
+                          }
+
+                          p{
+                            font-size: 14px;
+                            font-weight: 400;
+                            font-family: cursive;
+                          }
+
+                          button{
+                            background-color: black;
+                            border: none;
+                            color: #FFF;
+                            font-size: 14px;
+                            font-weight: bold;
+                            // font-family: cursive;
+                            width: 100%;
+                            height: 45px;
+                            transition: 0.3s ease-in-out;
+                            &:hover{
+                                background-color: #BA412A;
+                            }
+                          }
+                        }
+       }
+
+
+    
+    .log-btn{
+        text-align: center;
+        transform: translateY(100px);
+        button{
+            color: gray;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border: none;
+
+           
+        }
+        .log-btn1{
+            position: relative;
+            font-family: cursive;
+            font-weight: bold;
+            background-color: #fff;
+
+            &::before{
+                content: "";
+                position: absolute;
+            transition: 0.3s ease-in-out;
+                width: 0%;
+                height: 3px;
+                background-color: black;
+                left: 0%;
+                top: 100%;
+            }
+            &.logbtn-active{
+                color: black;
+                &::before{
+                    width: 100%;
+                }
+
+
+            }
+        }
+
+
+        .res-btn{
+            position: relative;
+            font-family: cursive;
+            font-weight: bold;
+            background-color: #fff;
+
+            &::before{
+                content: "";
+                position: absolute;
+            transition: 0.3s ease-in-out;
+                width: 0%;
+                height: 3px;
+                background-color: black;
+                left: 0%;
+                top: 100%;
+            }
+            &.resbtn-active{
+                color: black;
+                &::before{
+                    width: 100%;
+                }
+
+
+            }
+        }
+    }
+
+
+
+    
+}

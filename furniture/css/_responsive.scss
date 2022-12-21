@@ -1,0 +1,221 @@
+ @import '_aboutpeak.scss';
+ @import '_panda.scss';
+
+
+@media (max-width:1200px) {
+
+    #header{
+        display: none;
+    }
+
+    #res-header{
+        display: flex;
+        width: 100%;
+        
+    }
+
+
+    //res-big start///////////////////////////////
+    .res-big{
+        position: fixed;
+        // vertical-align: center;
+        z-index: 99999999999;
+
+        opacity: 0;
+        left: 0%;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            position: fixed;
+            .res-menu{
+                transform: translateX(0px);
+            }
+        }
+        width: 100%;
+        height: 100vh;
+        // top: 0%;
+        // background-color: black;
+       .res-menu{
+        transition: 0.3s ease-in-out;
+        height: 100vh;
+        position: relative;
+        background-color: #3E516A;
+        color: #fff;
+        width: 100%;
+        transform: translateX(-400px);
+        .res-menu-lang{
+            width:100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            display: flex;
+            .h6-1{
+                border-right: 1px solid gray;
+                border-top: 1px solid gray;
+                
+            }
+            .h6-2{
+                border-top: 1px solid gray;
+            }
+            h6{
+                height: 100%;
+                width: 50%;
+                padding: 20px 15px;
+                color: #fff;
+                font-size: 11px;
+                margin: 0;
+                font-family: sans-serif;
+                font-weight: bold;
+               
+            }
+           }
+       .res-menu-head{
+        height: 45px;
+        display: flex;
+        h1{
+            justify-content: center;
+            display: flex;
+            font-size: 18px;
+            align-items: center;
+            width: 85%;
+            height: 100%;
+            // border: 1px solid black;
+        }
+        i{
+            // border: 1px solid black;
+            width: 15%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       }
+
+       .res-search-btn{
+        background-color: #fff;
+        width: 80%;
+        margin: auto;
+        border-radius: 5px;
+        margin-bottom: 39px;
+
+        input{
+            border-radius: 5px 0px 0px 5px;
+            outline: none;
+            width: 85%;
+            border: none;
+            padding: 5px 10px;
+        }
+        i{
+            display: inline-flex;
+            justify-content: center;
+            align-items:center ;
+            background-color: transparent;
+            width: 15%;
+            height: 100%;
+            color: gray;
+        }
+       }
+
+       .res-menu-mid{
+       
+        .accordion-body{
+            ul{
+                line-height: 30px;
+                li{
+                    margin-left: 20px;
+                    a{
+                        text-decoration: none;
+                        font-size: 13px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+       
+       }
+    
+
+
+       }
+
+       .res-menux{
+        background-color: transparent;
+        height: 100%;
+       }
+
+       .res-menu-foot{
+        padding: 22px;
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                    color: rgb(156, 154, 154);
+                    font-size: 11px;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+        i{
+            font-size: 20px;
+            margin-right: 10px;
+            margin-bottom: 12px;
+        }
+        span{
+            color: rgb(156, 154, 154);
+            font-size: 11px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+       
+       }
+       
+      
+
+    }
+    //res big finish/////////////////////////////////////////
+
+   
+}
+
+
+@media (max-width:756px){
+
+    #section-about-1{
+        .about-peak-mid{
+            .img-box{
+                width: 100%;
+                img{
+                    width: 100%;
+                   
+                }
+            }
+        }
+    }
+
+    #res-header{
+        .res-right{
+            li{
+                display: none;
+            }
+        }
+    }
+
+
+}
+
+@media (min-width:1200px) {
+
+    #res-header{
+        display: none;
+    }
+
+    .res-big{
+        display: none;
+    }
+
+}

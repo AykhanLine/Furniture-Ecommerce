@@ -1,0 +1,103 @@
+#contact-us{
+    .contact-head{
+        padding: 20px;
+        h1{
+         font-size: 25px; 
+         font-weight: bold;  
+        }
+    }
+
+    .contact-mid{
+        width: 100%;
+        padding: 50px;
+        iframe{
+            width: 100%;
+        }
+    }
+
+    .contact-footer{
+    
+        padding: 0px 50px 30px 50px;
+        width: 100%;
+
+        .cont-foot-left{
+            span{
+                display: block;
+            }
+            input{
+                margin-bottom: 20px;
+                height: 40px;
+                width: 100%;
+                border-color: rgba(128, 128, 128, 0.282);
+                outline-color:rgba(128, 128, 128, 0.282) ;
+                transition: 0.3s ease-in-out;
+                &:focus{
+                    outline-color: gray;
+                }
+            }
+
+            .r-bot{
+                input{
+                    height: 250px;
+                }
+
+                button{
+                    color: #fff;
+                    background-color: black;
+                    border: none;
+                    font-weight: bold;
+                    font-size: 13px;
+                    width: 140px;
+                    height: 40px;
+                    font-family: cursive;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        background-color:#BA412A ;
+                    }
+                }
+            }
+        }
+
+        .r-right{
+
+            .r-right-box{
+                margin-bottom: 50px;
+            }
+            img{
+                width: 25px;
+                height: 25px;
+            }
+            h1{
+                display: inline-block;
+                margin-bottom: 20px;
+                font-size: 15px;
+                font-weight: bold;
+                margin-left: 15px;
+            }   
+
+           p{
+               font-size: 13px;
+               font-family: cursive;
+               font-weight: bold;
+               color: #5C5C5C;   
+               a{
+                text-decoration: none;
+                display: inline-block;
+                transition: 0.3s ease-in-out;
+                color: #5C5C5C;
+                &:hover{
+                    color: #BA412A;
+                }
+               }  
+               
+               .end-a{
+                margin-top: 20px;
+
+               }
+           }
+        
+    }
+
+  }
+}
+
